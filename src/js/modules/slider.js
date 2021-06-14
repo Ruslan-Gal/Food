@@ -64,7 +64,7 @@ function slider({ container, wrapper, field, slide, nextArrow, prevArrow, totalC
     });
 
     next.addEventListener('click', () => {
-        // если промотали до конца (максимальное смещение влево, т.е. показан последний слайд)
+        // если промотали до конца, т.е. показан последний слайд (максимальное смещение влево)
         if (offset === deleteNotDigits(width) * (slides.length - 1)) {
             offset = 0;
         } else {
@@ -84,7 +84,7 @@ function slider({ container, wrapper, field, slide, nextArrow, prevArrow, totalC
     });
 
     prev.addEventListener('click', () => {
-        // если промотали до начала (максимальное смещение вправо, т.е. показан первый слайд)
+        // если промотали до начала, т.е. показан первый слайд (максимальное смещение вправо)
         if (offset <= 0) {
             offset = deleteNotDigits(width) * (slides.length - 1);
         } else {

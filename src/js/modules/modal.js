@@ -49,7 +49,7 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
 
         // window.pageYOffset - смещение по оси y
         // document.documentElement.clientHeight - видимая часть (без прокрутки)
-        // если юзер долистал страницу до конца - выводить модалку
+        // если юзер долистал страницу до конца - открываем модальное окно
         if (
             window.pageYOffset + document.documentElement.clientHeight >=
             document.documentElement.scrollHeight
